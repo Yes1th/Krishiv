@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brand-gradient: linear-gradient(to right, #06B6D4, #3B82F6, #8B5CF6, #EC4899, #F59E0B);
+  --bg-primary: #0F172A;
+  --bg-secondary: #1E293B;
+  --bg-dark: #020617;
+  --bg-card: #1E293B;
+  --text-primary: #FFFFFF;
+  --text-secondary: #E5E7EB;
+  --text-muted: #9CA3AF;
+  --accent-cyan: #06B6D4;
+  --accent-purple: #8B5CF6;
+  --accent-pink: #EC4899;
+  --accent-amber: #F59E0B;
+  --gold-soft: #D4AF37;
+}
+
+@layer utilities {
+  .bg-brand {
+    background-image: var(--brand-gradient);
+  }
+  .shadow-glow-brand {
+    box-shadow: 0 0 30px rgba(59, 130, 246, 0.4);
+  }
+  .shadow-glow-cyan {
+    box-shadow: 0 0 20px rgba(6, 182, 212, 0.3);
+  }
+  .shadow-glow-purple {
+    box-shadow: 0 0 20px rgba(139, 92, 246, 0.3);
+  }
+}
+
+@layer base {
+  body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    @apply font-body antialiased;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading tracking-tight;
+  }
+}
+
+@layer components {
+  .container {
+    @apply max-w-[1240px] mx-auto px-6;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 font-heading font-semibold transition-all duration-300 rounded-xl px-7 py-3 whitespace-nowrap;
+  }
+
+  .btn-primary {
+    @apply bg-brand text-white shadow-glow-brand hover:scale-105 active:scale-100;
+  }
+
+  .btn-outline {
+    @apply bg-transparent border-[1.5px] border-accent-cyan text-accent-cyan hover:bg-accent-cyan hover:text-white hover:scale-105 active:scale-100;
+  }
+
+  .glass-card {
+    background-color: var(--bg-card);
+    @apply backdrop-blur-xl border border-white/[0.08] shadow-card transition-all duration-300 rounded-[20px] hover:border-accent-cyan/40 hover:shadow-glow-cyan hover:-translate-y-1;
+  }
+
+  .section-tag {
+    @apply inline-block font-heading text-[0.75rem] font-bold tracking-[0.15em] uppercase text-accent-cyan bg-accent-cyan/10 border border-accent-cyan/30 px-4 py-1.5 rounded-full mb-4;
+  }
+
+  .gradient-text {
+    @apply bg-brand bg-clip-text text-transparent;
+  }
+
+  /* Manual accent colors since config loading might be flaky for @apply */
+  .text-accent-cyan { color: var(--accent-cyan); }
+  .border-accent-cyan { border-color: var(--accent-cyan); }
+  .bg-accent-cyan\/10 { background-color: rgba(6, 182, 212, 0.1); }
+}
+
+/* Custom Utilities & Animations */
+.text-gold {
+  color: var(--gold-soft);
+}
+
+.animate-fade-up {
+  animation: fadeUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--bg-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-primary/30 rounded-full hover:bg-primary/50;
+}
