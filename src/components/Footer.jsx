@@ -122,8 +122,8 @@ export default function Footer() {
                 <span>✉️</span>
                 <div>
                   <p className="text-xs text-text-muted">General Inquiry</p>
-                  <a href="mailto:HR.krishivtechconsultants.com" className="text-sm text-text-muted hover:text-accent-cyan">
-                    HR.krishivtechconsultants.com
+                  <a href="mailto:HR@krishivtechconsultants.com" className="text-sm text-text-muted hover:text-accent-cyan">
+                    HR@krishivtechconsultants.com
                   </a>
                 </div>
               </div>
