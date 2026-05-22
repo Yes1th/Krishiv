@@ -113,7 +113,7 @@ export default function Footer() {
                 <span>📍</span>
                 <div>
                   <p className="text-xs text-text-muted">Location</p>
-                  <p className="text-sm text-text-muted">11415 8th PL W, UNIT A, Everett, WA 98204</p>
+                  <p className="text-sm text-text-muted">11400 Airport Road, Suite 200, Everett, WA 98204</p>
                 </div>
               </div>
 
