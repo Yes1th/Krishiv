@@ -80,7 +80,7 @@ export default function Contact() {
                   },
                   {
                     label: 'Address',
-                    value: '11415 8th PL W, UNIT A, Everett, WA 98204',
+                    value: '11400 airport road, suite 200, Everett, WA 98204',
                     icon: '📍',
                     color: 'text-accent-pink'
                   },
