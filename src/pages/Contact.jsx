@@ -66,17 +66,17 @@ export default function Contact() {
                   },
                   {
                     label: 'General Inquiry',
-                    value: 'info.krishivtechconsultants@gmail.com',
+                    value: 'info@krishivtechconsultants.com',
                     icon: '✉️',
                     color: 'text-accent-amber',
-                    href: 'mailto:info.krishivtechconsultants@gmail.com'
+                    href: 'mailto:info@krishivtechconsultants.com'
                   },
                   {
                     label: 'Business Contact',
-                    value: 'Krishnapriyakamini@krishivtechconsultants.com',
+                    value: 'hr@krishivtechconsultants.com',
                     icon: '✉️',
                     color: 'text-accent-amber',
-                    href: 'mailto:Krishnapriyakamini@krishivtechconsultants.com'
+                    href: 'mailto:hr@krishivtechconsultants.com'
                   },
                   {
                     label: 'Address',
