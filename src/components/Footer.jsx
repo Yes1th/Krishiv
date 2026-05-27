@@ -122,7 +122,7 @@ export default function Footer() {
                 <span>✉️</span>
                 <div>
                   <p className="text-xs text-text-muted">General Inquiry</p>
-                  <a href="mailto:HR@krishivtechconsultants.com" className="text-sm text-text-muted hover:text-accent-cyan">
+                  <a href="mailto:info@krishivtechconsultants.com" className="text-sm text-text-muted hover:text-accent-cyan">
                     HR@krishivtechconsultants.com
                   </a>
                 </div>
@@ -133,7 +133,7 @@ export default function Footer() {
                 <span>✉️</span>
                 <div>
                   <p className="text-xs text-text-muted">Business Contact</p>
-                  <a href="mailto:Krishnapriyakamini@krishivtechconsultants.com" className="text-sm text-text-muted hover:text-accent-cyan">
+                  <a href="mailto:hr@krishivtechconsultants.com" className="text-sm text-text-muted hover:text-accent-cyan">
                     Krishnapriyakamini@krishivtechconsultants.com
                   </a>
                 </div>
