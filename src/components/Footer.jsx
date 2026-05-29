@@ -123,7 +123,7 @@ export default function Footer() {
                 <div>
                   <p className="text-xs text-text-muted">General Inquiry</p>
                   <a href="mailto:info@krishivtechconsultants.com" className="text-sm text-text-muted hover:text-accent-cyan">
-                    HR@krishivtechconsultants.com
+                   info@krishivtechconsultants.co
                   </a>
                 </div>
               </div>
@@ -134,7 +134,7 @@ export default function Footer() {
                 <div>
                   <p className="text-xs text-text-muted">Business Contact</p>
                   <a href="mailto:hr@krishivtechconsultants.com" className="text-sm text-text-muted hover:text-accent-cyan">
-                    Krishnapriyakamini@krishivtechconsultants.com
+                    hr@krishivtechconsultants.com
                   </a>
                 </div>
               </div>
